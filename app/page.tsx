@@ -345,9 +345,6 @@ export default function Page() {
 
       <section className="block" id="infra">
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
-          <span style={{ fontSize: '13px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--purple)' }}>
-            OFIMUNDO TI
-          </span>
           <span style={{ fontSize: '12px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--muted)', background: 'var(--bg-soft)', padding: '4px 10px', borderRadius: '6px', border: '1px solid var(--line)' }}>
             RESUMEN EJECUTIVO
           </span>
@@ -526,7 +523,7 @@ export default function Page() {
             alt="Logo de Ofimundo"
           />
           <h3 className="gradient-text">Muchas gracias</h3>
-          <p>Gracias por su atención al reporte de cierre Mayo 2026.</p>
+          <p>Gracias por su atención al reporte de cierre Julio 2026.</p>
           <small>Ofimundo · Tu transformación, nuestra pasión</small>
         </div>
       </footer>
