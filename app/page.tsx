@@ -11,32 +11,37 @@ export default function Page() {
             <a href="#resumen">Resumen</a>
             <a href="#servicios">Servicios</a>
             <a href="#propuestas">Propuestas</a>
-            <a href="#ejecuciones">Ejecuciones</a>
-            <a href="#roadmap">Roadmap</a>
+            <a href="#roadmap-julio">Ejecuciones Julio</a>
+            <a href="#roadmap-agosto">Roadmap Agosto</a>
             <a href="#infra">Infraestructura</a>
           </nav>
         </div>
       </header>
 
-      <section className="hero">
+      <section className="hero" style={{ paddingBottom: 16 }}>
         <span className="eyebrow">Gerencia de Tecnología e Innovación</span>
         <h1 className="gradient-text">Comité de Gerentes · Cierre de Gestión</h1>
         <p className="sub">Reporte de cierre — Julio 2026</p>
-        <p style={{ color: 'var(--purple)', fontSize: '24px', fontWeight: 800, marginTop: '10px' }}>Resumen ejecutivo del portafolio</p>
       </section>
 
-      <section className="stats" id="resumen">
-        <div className="stat-card">
-          <div className="stat-num gradient-text">08</div>
-          <div className="stat-label">Clientes en Operación</div>
+      <section className="block" id="resumen" style={{ paddingTop: 16, paddingBottom: 24 }}>
+        <div className="section-head" style={{ marginBottom: 16 }}>
+          <span className="bar"></span>
+          <h2>Resumen Ejecutivo del Portafolio</h2>
         </div>
-        <div className="stat-card">
-          <div className="stat-num gradient-text">06</div>
-          <div className="stat-label">Proyectos Internos</div>
-        </div>
-        <div className="stat-card">
-          <div className="stat-num gradient-text">100%</div>
-          <div className="stat-label">Disponibilidad de Infraestructura</div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 20 }}>
+          <div className="stat-card">
+            <div className="stat-num gradient-text">08</div>
+            <div className="stat-label">Clientes en Operación</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-num gradient-text">09</div>
+            <div className="stat-label">Proyectos Internos</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-num gradient-text">100%</div>
+            <div className="stat-label">Disponibilidad de Infraestructura</div>
+          </div>
         </div>
       </section>
 
@@ -140,31 +145,73 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="block" id="ejecuciones">
+      <section className="block" id="roadmap-julio">
         <div className="section-head">
           <span className="bar"></span>
-          <div>
-            <h2>Ejecuciones Julio</h2>
-            <p style={{ color: 'var(--muted)', fontSize: '15px', fontWeight: 600, marginTop: '2px' }}> OFIMUNDO, DREAMTEC</p>
-          </div>
-        </div>
-        <ul className="check-list">
-          <li>Sitio Dreamtec — Cyber</li>
-          <li>Inventario TIC</li>
-          <li>Ajustes presentación Governanza</li>
-          <li>Catálogo Digital</li>
-        </ul>
-      </section>
-
-      <section className="block" id="roadmap">
-        <div className="section-head">
-          <span className="bar"></span>
-          <h2>Roadmap Agosto 2026</h2>
+          <h2>Ejecuciones Julio 2026</h2>
         </div>
         <div className="roadmap-grid">
           <div className="rm-card">
             <h4>Sitio Dreamtec</h4>
-            <p className="hito">Requerimientos para campañas día del Padre</p>
+            <ul className="hito-list">
+              <li>Habilitación Landing Experiencias</li>
+              <li>Histórico Base de datos cliente</li>
+              <li>Mejoras módulo admin sitio</li>
+              <li>Campaña día del Niño</li>
+            </ul>
+            <div className="weeks">
+              <span className="week on">S1</span>
+              <span className="week on">S2</span>
+              <span className="week on">S3</span>
+              <span className="week">S4</span>
+            </div>
+          </div>
+          <div className="rm-card">
+            <h4>Sitio Ofimundo</h4>
+            <ul className="hito-list">
+              <li>Creación base complementaria e integración MP</li>
+              <li>Inicio QA (interno, externo)</li>
+            </ul>
+            <div className="weeks">
+              <span className="week on">S1</span>
+              <span className="week on">S2</span>
+              <span className="week on">S3</span>
+              <span className="week on">S4</span>
+            </div>
+          </div>
+          <div className="rm-card">
+            <h4>WhatSapp</h4>
+            <p className="hito">Ajustes proceso e Implementación</p>
+            <div className="weeks">
+              <span className="week">S1</span>
+              <span className="week">S2</span>
+              <span className="week on">S3</span>
+              <span className="week">S4</span>
+            </div>
+          </div>
+          <div className="rm-card">
+            <h4>Venta Rapida</h4>
+            <p className="hito"> Reutilización integraciones para Dreamtec</p>
+            <div className="weeks">
+              <span className="week">S1</span>
+              <span className="week on">S2</span>
+              <span className="week on">S3</span>
+              <span className="week">S4</span>
+            </div>
+          </div>
+          <div className="rm-card">
+            <h4>Automatización DTE</h4>
+            <p className="hito">Paso Produccion</p>
+            <div className="weeks">
+              <span className="week on">S1</span>
+              <span className="week">S2</span>
+              <span className="week">S3</span>
+              <span className="week">S4</span>
+            </div>
+          </div>
+          <div className="rm-card">
+            <h4>Catalogo Digital (Aut & MPS)</h4>
+            <p className="hito"> Paso a QA</p>
             <div className="weeks">
               <span className="week">S1</span>
               <span className="week on">S2</span>
@@ -173,18 +220,28 @@ export default function Page() {
             </div>
           </div>
           <div className="rm-card">
-            <h4>Sitio Dreamtec</h4>
-            <p className="hito">Siguientes requerimientos priorizados</p>
+            <h4>Funcionalidades (Dashboard Modelo de atención)</h4>
+            <p className="hito">Identificación de Cliente XXL en Mesa de Ayuda y Priorización</p>
             <div className="weeks">
-              <span className="week on">S1</span>
+              <span className="week">S1</span>
               <span className="week">S2</span>
               <span className="week on">S3</span>
               <span className="week on">S4</span>
             </div>
           </div>
           <div className="rm-card">
-            <h4>Sitio Ofimundo</h4>
-            <p className="hito">Carga de datos, habilitación agente, pruebas</p>
+            <h4>Mejoras Inyección Automática Picking</h4>
+            <p className="hito">Incorporación Cambios solicitados</p>
+            <div className="weeks">
+              <span className="week">S1</span>
+              <span className="week">S2</span>
+              <span className="week on">S3</span>
+              <span className="week">S4</span>
+            </div>
+          </div>
+          <div className="rm-card">
+            <h4>Monitoreo y Adm TIC (Fases 1, 2,3,4)</h4>
+            <p className="hito">Fase 1</p>
             <div className="weeks">
               <span className="week">S1</span>
               <span className="week on">S2</span>
@@ -192,19 +249,48 @@ export default function Page() {
               <span className="week on">S4</span>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="block" id="roadmap-agosto">
+        <div className="section-head">
+          <span className="bar"></span>
+          <h2>Roadmap Agosto 2026</h2>
+        </div>
+        <div className="roadmap-grid">
+          <div className="rm-card">
+            <h4>Sitio Dreamtec</h4>
+            <ul className="hito-list">
+              <li>Integración Fintoc</li>
+              <li>Mejoras para SEO</li>
+            </ul>
+            <div className="weeks">
+              <span className="week">S1</span>
+              <span className="week on">S2</span>
+              <span className="week on">S3</span>
+              <span className="week">S4</span>
+            </div>
+          </div>
+
+          <div className="rm-card">
+            <h4>Sitio Ofimundo</h4>
+            <ul className="hito-list">
+              <li>Inicio QA (interno, externo)</li>
+              <li>Corrección observaciones</li>
+            </ul>
+            <div className="weeks">
+              <span className="week">S1</span>
+              <span className="week on">S2</span>
+              <span className="week on">S3</span>
+              <span className="week">S4</span>
+            </div>
+          </div>
+
           <div className="rm-card">
             <h4>Sitio Global</h4>
-            <p className="hito">Desarrollo Fase 2</p>
-            <div className="weeks">
-              <span className="week on">S1</span>
-              <span className="week on">S2</span>
-              <span className="week on">S3</span>
-              <span className="week">S4</span>
-            </div>
-          </div>
-          <div className="rm-card">
-            <h4>Contabilización</h4>
-            <p className="hito">Pruebas usuario</p>
+            <ul className="hito-list">
+              <li>Desarrollo Fase 2</li>
+            </ul>
             <div className="weeks">
               <span className="week">S1</span>
               <span className="week on">S2</span>
@@ -212,9 +298,14 @@ export default function Page() {
               <span className="week">S4</span>
             </div>
           </div>
+
           <div className="rm-card">
-            <h4>Soluciones Estándar</h4>
-            <p className="hito">OCR + gestor documental / cuentas básicas Aguas Andina</p>
+            <h4>Venta Rápida</h4>
+            <ul className="hito-list">
+              <li>Produccion (integracion Ingram)</li>
+              <li>QA Integraciones Dreamtec</li>
+              <li>Paso produccion</li>
+            </ul>
             <div className="weeks">
               <span className="week">S1</span>
               <span className="week on">S2</span>
@@ -222,32 +313,29 @@ export default function Page() {
               <span className="week">S4</span>
             </div>
           </div>
+
           <div className="rm-card">
-            <h4>Reporte TIC</h4>
-            <p className="hito">Desarrollo e Implementación</p>
+            <h4>Mejoras Inyección Automática Picking</h4>
+            <ul className="hito-list">
+              <li>Habilitación comunicados a clientes</li>
+            </ul>
             <div className="weeks">
               <span className="week">S1</span>
               <span className="week on">S2</span>
-              <span className="week on">S3</span>
+              <span className="week">S3</span>
               <span className="week">S4</span>
             </div>
           </div>
+
           <div className="rm-card">
-            <h4>Sistema Alertas Proceso Ope</h4>
-            <p className="hito">Desarrollo</p>
+            <h4>Funcionalidades (Dashboard Modelo de atención)</h4>
+            <ul className="hito-list">
+              <li>Habilitación Idntificación de Equipos estrategicos</li>
+              <li>QA funcionalidades</li>
+            </ul>
             <div className="weeks">
               <span className="week">S1</span>
-              <span className="week on">S2</span>
-              <span className="week on">S3</span>
-              <span className="week on">S4</span>
-            </div>
-          </div>
-          <div className="rm-card">
-            <h4>Cotizador Aramark</h4>
-            <p className="hito">Ajustes e Implementación</p>
-            <div className="weeks">
-              <span className="week">S1</span>
-              <span className="week on">S2</span>
+              <span className="week">S2</span>
               <span className="week on">S3</span>
               <span className="week">S4</span>
             </div>
