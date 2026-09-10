@@ -11,8 +11,8 @@ export default function Page() {
             <a href="#resumen">Resumen</a>
             <a href="#servicios">Servicios</a>
             <a href="#propuestas">Propuestas</a>
-            <a href="#roadmap-julio">Ejecuciones Julio</a>
-            <a href="#roadmap-agosto">Roadmap Agosto</a>
+            <a href="#roadmap-agosto">Ejecuciones Agosto</a>
+            <a href="#roadmap-septiembre">Roadmap Septiembre</a>
             <a href="#infra">Infraestructura</a>
           </nav>
         </div>
@@ -20,18 +20,18 @@ export default function Page() {
 
       <section className="hero" style={{ paddingBottom: 16 }}>
         <span className="eyebrow">Gerencia de Tecnología e Innovación</span>
-        <h1 className="gradient-text">Comité de Gerentes · Cierre de Gestión</h1>
-        <p className="sub">Reporte de cierre — Julio 2026</p>
+        <h1 className="gradient-text">Comité de Gerentes</h1>
+        <p className="sub">Reporte de cierre — Agosto 2026</p>
       </section>
 
       <section className="block" id="resumen" style={{ paddingTop: 16, paddingBottom: 24 }}>
         <div className="section-head" style={{ marginBottom: 16 }}>
           <span className="bar"></span>
-          <h2>Resumen Ejecutivo del Portafolio</h2>
+          <h2>Resumen Ejecutivo</h2>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 20 }}>
           <div className="stat-card">
-            <div className="stat-num gradient-text">08</div>
+            <div className="stat-num gradient-text">10</div>
             <div className="stat-label">Clientes en Operación</div>
           </div>
           <div className="stat-card">
@@ -63,7 +63,12 @@ export default function Page() {
               <tr>
                 <td>Convatec</td>
                 <td>Digitalización y Gestión Documental</td>
-                <td><span className="badge b-activo">Activo – Con solicitud activa</span></td>
+                <td><span className="badge b-activo">Activo</span></td>
+              </tr>
+              <tr>
+                <td>Comisión Nacional de Acreditación</td>
+                <td>Implementación de Tokens</td>
+                <td><span className="badge b-activo">Activo</span></td>
               </tr>
               <tr>
                 <td>Automóvil Club</td>
@@ -106,11 +111,6 @@ export default function Page() {
             </thead>
             <tbody>
               <tr>
-                <td>CNA</td>
-                <td>Tokens físicos MFA(Integración M365 & Fortinet)</td>
-                <td><span className="badge b-activo">Propuesta Adjudicada</span></td>
-              </tr>
-              <tr>
                 <td>Municipalidad de Atacama</td>
                 <td>Automatización(Aceptación y rechazo)</td>
                 <td><span className="badge b-standby">En Evaluación</span></td>
@@ -145,10 +145,10 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="block" id="roadmap-julio">
+      <section className="block" id="roadmap-agosto">
         <div className="section-head">
           <span className="bar"></span>
-          <h2>Ejecuciones Julio 2026</h2>
+          <h2>Ejecuciones Agosto 2026</h2>
         </div>
         <div className="roadmap-grid">
           <div className="rm-card">
@@ -252,10 +252,10 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="block" id="roadmap-agosto">
+      <section className="block" id="roadmap-septiembre">
         <div className="section-head">
           <span className="bar"></span>
-          <h2>Roadmap Agosto 2026</h2>
+          <h2>Roadmap Septiembre 2026</h2>
         </div>
         <div className="roadmap-grid">
           <div className="rm-card">
@@ -523,7 +523,7 @@ export default function Page() {
             alt="Logo de Ofimundo"
           />
           <h3 className="gradient-text">Muchas gracias</h3>
-          <p>Gracias por su atención al reporte de cierre Julio 2026.</p>
+          <p>Gracias por su atención al reporte de cierre Agosto 2026.</p>
           <small>Ofimundo · Tu transformación, nuestra pasión</small>
         </div>
       </footer>
