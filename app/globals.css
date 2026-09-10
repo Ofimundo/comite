@@ -427,7 +427,7 @@ tbody tr td:first-child { font-weight: 600; }
   height: 100%;
 }
 .rm-card h4 { font-size: 15px; font-weight: 800; color: var(--navy); margin-bottom: 4px; }
-.rm-card .hito { font-size: 13px; color: var(--muted); margin-bottom: 14px; }
+.rm-card .hito { font-size: 12.5px; color: var(--muted); margin-bottom: 6px; line-height: 1.4; }
 .rm-card .hito-list {
   list-style: none;
   padding: 0;
