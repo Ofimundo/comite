@@ -148,12 +148,6 @@ export default function Page() {
                 <td>Octubre 2026</td>
               </tr>
               <tr>
-                <td>Municipalidad de Atacama</td>
-                <td>Automatización(Aceptación y rechazo)</td>
-                <td><span className="badge b-standby">En Evaluación</span></td>
-                <td>Octubre 2026</td>
-              </tr>
-              <tr>
                 <td>Sodexo</td>
                 <td>Digitalización de documentos</td>
                 <td><span className="badge b-standby">Standby</span></td>
