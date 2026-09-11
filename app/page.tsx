@@ -547,6 +547,7 @@ export default function Page() {
               <li><strong>31</strong> mantenciones realizadas.</li>
               <li><strong>3</strong> cambios de equipos (Lucy, Daniela y Adán).</li>
               <li><strong>2</strong> no se han podido realizar (Luis Baros y Álvaro Vial).</li>
+              <li>Mantenciones Equipo Lampa.</li>
             </ul>
           </div>
         </div>
@@ -610,7 +611,7 @@ export default function Page() {
             alt="Logo de Ofimundo"
           />
           <h3 className="gradient-text">Muchas gracias</h3>
-          <p>Gracias por su atención al reporte de cierre Agosto 2026.</p>
+          <p>Por su atención al reporte de cierre Agosto 2026.</p>
           <small>Ofimundo · Tu transformación, nuestra pasión</small>
         </div>
       </footer>
