@@ -10,7 +10,7 @@ export default function Page() {
           <nav>
             <a href="#resumen">Resumen</a>
             <a href="#servicios">Servicios</a>
-            <a href="#propuestas">Propuestas</a>
+            <a href="#propuestas">Prospectos &amp; Propuestas</a>
             <a href="#roadmap-agosto">Ejecuciones Agosto</a>
             <a href="#roadmap-septiembre">Roadmap Septiembre</a>
             <a href="#infra">Infraestructura</a>
@@ -71,6 +71,11 @@ export default function Page() {
                 <td><span className="badge b-activo">Activo</span></td>
               </tr>
               <tr>
+                <td>Corpesca</td>
+                <td>Proceso Facturas desde E-mail</td>
+                <td><span className="badge b-activo">Activo</span></td>
+              </tr>
+              <tr>
                 <td>Automóvil Club</td>
                 <td>Aceptación y Rechazo de Facturas</td>
                 <td><span className="badge b-activo">Activo</span></td>
@@ -78,11 +83,6 @@ export default function Page() {
               <tr>
                 <td>M. Antofagasta</td>
                 <td>Aceptación y Rechazo de Facturas</td>
-                <td><span className="badge b-activo">Activo</span></td>
-              </tr>
-              <tr>
-                <td>Corpesca</td>
-                <td>Proceso Facturas desde E-mail</td>
                 <td><span className="badge b-activo">Activo</span></td>
               </tr>
               <tr>
@@ -98,7 +98,7 @@ export default function Page() {
       <section className="block" id="propuestas">
         <div className="section-head">
           <span className="bar"></span>
-          <h2>Propuestas en Espera o Evaluación</h2>
+          <h2>Prospectos &amp; Propuestas</h2>
         </div>
         <div className="table-wrap">
           <table>
@@ -107,33 +107,57 @@ export default function Page() {
                 <th>Cliente</th>
                 <th>Tipo de Servicio</th>
                 <th>Estado</th>
+                <th>Fecha Estimada de Cierre</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>B. Asociados</td>
+                <td>Municipalidad de Antofagasta</td>
+                <td>Cuentas Básicas</td>
+                <td><span className="badge b-piloto">Acordado</span></td>
+                <td>30 de Septiembre</td>
+              </tr>
+              <tr>
+                <td>Municipalidad de Taltal</td>
+                <td>Aprueba y Rechaza Facturas</td>
+                <td><span className="badge b-dev">En Desarrollo</span></td>
+                <td>30 de Diciembre</td>
+              </tr>
+              <tr>
+                <td>Municipalidad San Pedro de Atacama</td>
+                <td>Aprueba y Rechaza Facturas</td>
+                <td><span className="badge b-standby">Por Presentar</span></td>
+                <td>30 de Diciembre</td>
+              </tr>
+              <tr>
+                <td>Universidad Católica del Norte</td>
+                <td>Aprueba y Rechaza Facturas</td>
+                <td><span className="badge b-standby">Por Presentar</span></td>
+                <td>30 de Diciembre</td>
+              </tr>
+              <tr>
+                <td>Beasociados SPA</td>
                 <td>Proyecto de infraestructura</td>
                 <td><span className="badge b-standby">En Evaluación</span></td>
+                <td>Septiembre 2026</td>
               </tr>
               <tr>
                 <td>Exser</td>
                 <td>Proyectos de infraestructura</td>
                 <td><span className="badge b-dev">Propuesta Entregada</span></td>
-              </tr>
-              <tr>
-                <td>Municipalidad de Antofagasta</td>
-                <td>Automatización(Cuentas basicas)</td>
-                <td><span className="badge b-piloto">Piloto</span></td>
+                <td>Octubre 2026</td>
               </tr>
               <tr>
                 <td>Municipalidad de Atacama</td>
                 <td>Automatización(Aceptación y rechazo)</td>
                 <td><span className="badge b-standby">En Evaluación</span></td>
+                <td>Octubre 2026</td>
               </tr>
               <tr>
                 <td>Sodexo</td>
                 <td>Digitalización de documentos</td>
-                <td><span className="badge b-standby">En Evaluación</span></td>
+                <td><span className="badge b-standby">Standby</span></td>
+                <td>—</td>
               </tr>
             </tbody>
           </table>
@@ -188,7 +212,7 @@ export default function Page() {
             </div>
           </div>
           <div className="rm-card">
-            <h4>WhatSapp</h4>
+            <h4>WhatsApp</h4>
             <ul className="hito-list">
               <li>Ajustes en el proceso</li>
               <li>QA Interno</li>
@@ -219,7 +243,7 @@ export default function Page() {
           <div className="rm-card">
             <h4>Inventario TIC'S(Integración de anexo de contratos)</h4>
             <ul className="hito-list">
-              <li>Se desarrollo el anexo</li>
+              <li>Desarrollo el anexo</li>
               <li>QA Interno</li>
               <li>Paso a producción</li>
             </ul>
@@ -233,8 +257,8 @@ export default function Page() {
           <div className="rm-card">
             <h4>Generador de Firmas</h4>
             <ul className="hito-list">
-              <li>Se desarrollo </li>
-              <li>Se Paso a producción </li>
+              <li>Desarrollo Aplicativo </li>
+              <li>Paso a producción </li>
             </ul>
             <div className="weeks">
               <span className="week">S1</span>
@@ -246,7 +270,7 @@ export default function Page() {
           <div className="rm-card">
             <h4>Plan de Cuentas</h4>
             <ul className="hito-list">
-              <li>Se agrega opción de ingreso de equipos criticos y estrategicos</li>
+              <li>Se agrega opción de ingreso de equipos críticos y estratégicos</li>
             </ul>
             <div className="weeks">
               <span className="week">S1</span>
@@ -256,9 +280,9 @@ export default function Page() {
             </div>
           </div>
           <div className="rm-card">
-            <h4>Aceptación y Rechazo de Facturas Antofagasta</h4>
+            <h4>Aceptación y Rechazo de Facturas M. Antofagasta</h4>
             <ul className="hito-list">
-              <li>Cambio de parametro inferiores a un limite en especifico</li>
+              <li>Cambio de parámetro inferiores a un limite en especifico</li>
             </ul>
             <div className="weeks">
               <span className="week">S1</span>
@@ -270,9 +294,10 @@ export default function Page() {
           <div className="rm-card">
             <h4>Inyección Automática de Suministros</h4>
             <ul className="hito-list">
-              <li>Notificación de alertas por correo electrónico (c. Vencido y c. Bloqueado se agrega área facturación)</li>
-              <li>Se elimina regla ingreso manual automático reciente</li>
+              <li>Notificación de alertas por correo electrónico (C. Vencido y C. Bloqueado se agrega área facturación)</li>
+              <li>Se elimina regla ingreso manual/automático reciente</li>
               <li>Se omite alerta de equipo en proceso de retiro</li>
+              <li>Entre otros</li>
             </ul>
             <div className="weeks">
               <span className="week">S1</span>
@@ -478,6 +503,57 @@ export default function Page() {
               <li><strong>31</strong> mantenciones realizadas.</li>
               <li><strong>3</strong> cambios de equipos (Lucy, Daniela y Adán).</li>
               <li><strong>2</strong> no se han podido realizar (Luis Baros y Álvaro Vial).</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 style={{ fontSize: '18px', fontWeight: 800, color: 'var(--navy)', marginTop: 20, marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
+          <span style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--magenta)', display: 'inline-block' }}></span>
+          Septiembre 2026
+        </h3>
+
+        <div className="cards" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
+          {/* Card 1: Red Wi-Fi */}
+          <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+              <div style={{ width: 36, height: 36, borderRadius: 8, background: '#eff6ff', color: '#2563eb', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"></path></svg>
+              </div>
+              <h3 style={{ margin: 0, fontSize: 15 }}>Red Wi-Fi</h3>
+            </div>
+            <p style={{ margin: 0, fontSize: 13, lineHeight: 1.4, color: 'var(--muted)' }}>
+              Migración del servidor de administración de la red Wi-Fi.
+            </p>
+          </div>
+
+          {/* Card 2: VPN */}
+          <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+              <div style={{ width: 36, height: 36, borderRadius: 8, background: '#eff6ff', color: '#2563eb', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+              </div>
+              <h3 style={{ margin: 0, fontSize: 15 }}>VPN</h3>
+            </div>
+            <ul style={{ margin: 0, paddingLeft: 16, fontSize: 12, color: 'var(--muted)', lineHeight: 1.45 }}>
+              <li>VPN Site-to-Site entre Lota y Lampa.</li>
+              <li>Evaluación de la implementación.</li>
+            </ul>
+          </div>
+
+          {/* Card 3: Monitoreo de Seguridad */}
+          <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+              <div style={{ width: 36, height: 36, borderRadius: 8, background: '#eff6ff', color: '#2563eb', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+              </div>
+              <h3 style={{ margin: 0, fontSize: 15 }}>Monitoreo de Seguridad</h3>
+            </div>
+            <p style={{ margin: 0, fontSize: 12.5, fontWeight: 600, color: 'var(--ink)' }}>
+              Implementación de herramienta para centralización de eventos de seguridad:
+            </p>
+            <ul style={{ margin: 0, paddingLeft: 16, fontSize: 12, color: 'var(--muted)', lineHeight: 1.45 }}>
+              <li>Análisis de logs.</li>
+              <li>Detección de intrusiones en línea.</li>
             </ul>
           </div>
         </div>
