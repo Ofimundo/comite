@@ -344,7 +344,7 @@ export default function Page() {
           <div className="rm-card">
             <h4>Sitio Ofimundo</h4>
             <ul className="hito-list">
-              <li>Entrenamiento del agente</li>
+              <li>Entrenamiento agente</li>
               <li>Reemplazo de información Salas Colaborativas</li>
               <li>Paso a producción</li>
             </ul>
@@ -429,6 +429,50 @@ export default function Page() {
               <span className="week">S2</span>
               <span className="week on">S3</span>
               <span className="week on">S4</span>
+            </div>
+          </div>
+
+          <div className="rm-card">
+            <h4>Vista Comercial - Seguimiento Negocio/Implementación</h4>
+            <ul className="hito-list">
+              <li>Flujo Seguim. desde generación del Negocio hasta la implementación en cliente</li>
+            </ul>
+            <div className="weeks">
+              <span className="week">S1</span>
+              <span className="week on">S2</span>
+              <span className="week on">S3</span>
+              <span className="week">S4</span>
+            </div>
+          </div>
+
+          <div className="rm-card">
+            <h4>Factura de Cortesía</h4>
+            <ul className="hito-list">
+              <li>Toma Req.</li>
+              <li>Diseño</li>
+              <li>Desarrollo</li>
+            </ul>
+            <div className="weeks">
+              <span className="week">S1</span>
+              <span className="week">S2</span>
+              <span className="week on">S3</span>
+              <span className="week">S4</span>
+            </div>
+          </div>
+
+          <div className="rm-card">
+            <h4>Integración NDD</h4>
+            <ul className="hito-list">
+              <li>Revisión Documentación y API de NDD</li>
+              <li>Integración de API</li>
+              <li>QA integración</li>
+              <li>Paso a Producción</li>
+            </ul>
+            <div className="weeks">
+              <span className="week">S1</span>
+              <span className="week">S2</span>
+              <span className="week on">S3</span>
+              <span className="week">S4</span>
             </div>
           </div>
         </div>
