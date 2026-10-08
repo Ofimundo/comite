@@ -11,8 +11,8 @@ export default function Page() {
             <a href="#resumen">Resumen</a>
             <a href="#servicios">Servicios</a>
             <a href="#propuestas">Prospectos &amp; Propuestas</a>
-            <a href="#roadmap-septiembre">Ejecuciones Agosto</a>
-            <a href="#roadmap-octubre">Roadmap Septiembre</a>
+            <a href="#ejecuciones-septiembre">Ejecuciones Septiembre</a>
+            <a href="#roadmap-octubre">Roadmap Octubre</a>
             <a href="#infra">Infraestructura</a>
           </nav>
         </div>
@@ -170,7 +170,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="block" id="roadmap-agosto">
+      <section className="block" id="ejecuciones-septiembre">
         <div className="section-head">
           <span className="bar"></span>
           <h2>Ejecuciones Septiembre  2026</h2>
@@ -321,7 +321,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="block" id="roadmap-septiembre">
+      <section className="block" id="roadmap-octubre">
         <div className="section-head">
           <span className="bar"></span>
           <h2>Roadmap Octubre 2026</h2>
