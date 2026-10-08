@@ -161,7 +161,7 @@ export default function Page() {
               </tr>
               <tr>
                 <td>Hospital Militar</td>
-                <td>Sistema para depto Biomedica  </td>
+                <td>Departamento de Ingeniería Biomédica</td>
                 <td><span className="badge b-standby">En espera fecha reunión</span></td>
                 <td>-</td>
               </tr>
@@ -180,8 +180,8 @@ export default function Page() {
             <h4>Sitio Dreamtec</h4>
             <ul className="hito-list">
               <li>Landing</li>
-              <li>Conexion Google Analytics</li>
-              <li>Mejoras velosidad del sitio </li>
+              <li>Conexión Google Analytics</li>
+              <li>Mejoras velocidad del sitio </li>
             </ul>
             <div className="weeks">
               <span className="week ">S1</span>
@@ -244,9 +244,9 @@ export default function Page() {
           </div>
 
           <div className="rm-card">
-            <h4> Prediagnosticos tecnicos</h4>
+            <h4> Prediagnósticos técnicos</h4>
             <ul className="hito-list">
-              <li>Visitas Tecnico(1° Visita - 2° Visita)</li>
+              <li>Visitas Técnicas(1° Visita - 2° Visita)</li>
             </ul>
             <div className="weeks">
               <span className="week">S1</span>
@@ -260,7 +260,7 @@ export default function Page() {
             <ul className="hito-list">
               <li>M. Antofagasta - OK </li>
               <li> ECRGroup - En proceso</li>
-              <li> Consiliación bancaria - Pendiente</li>
+              <li> Conciliación bancaria - Pendiente</li>
             </ul>
             <div className="weeks">
               <span className="week">S1</span>
@@ -279,18 +279,6 @@ export default function Page() {
               <span className="week">S2</span>
               <span className="week on">S3</span>
               <span className="week">S4</span>
-            </div>
-          </div>
-          <div className="rm-card">
-            <h4>Aceptación y Rechazo de Facturas M. Antofagasta</h4>
-            <ul className="hito-list">
-              <li>Cambio de parámetro inferiores a un limite en especifico</li>
-            </ul>
-            <div className="weeks">
-              <span className="week">S1</span>
-              <span className="week">S2</span>
-              <span className="week">S3</span>
-              <span className="week on">S4</span>
             </div>
           </div>
           <div className="rm-card">
@@ -330,7 +318,7 @@ export default function Page() {
           <div className="rm-card">
             <h4>Sitio Dreamtec</h4>
             <ul className="hito-list">
-              <li>Se realizo la integracion Cubbo</li>
+              <li>Integración Cubbo</li>
               <li> Funcionalidad Cupones</li>
               <li> Funcionalidad Mayoristas(TecnoGlobal)</li>
               <li>Paso a producción</li>
@@ -369,22 +357,6 @@ export default function Page() {
               <span className="week">S4</span>
             </div>
           </div>
-
-          <div className="rm-card">
-            <h4>Integración Dreamtec</h4>
-            <ul className="hito-list">
-              <li>Comunicados de Starkom</li>
-              <li>Generación de ordenes de compra</li>
-              <li>Consulta de precios</li>
-            </ul>
-            <div className="weeks">
-              <span className="week">S1</span>
-              <span className="week">S2</span>
-              <span className="week on">S3</span>
-              <span className="week">S4</span>
-            </div>
-          </div>
-
           <div className="rm-card">
             <h4>Cambio de Usuario</h4>
             <ul className="hito-list">
@@ -420,7 +392,7 @@ export default function Page() {
             <h4>Reemplazo Electroneek</h4>
             <ul className="hito-list">
               <li>ECRGroup - En proceso</li>
-              <li>Consiliación bancaria - Pendiente</li>
+              <li>Conciliación bancaria - Pendiente</li>
             </ul>
             <div className="weeks">
               <span className="week">S1</span>
@@ -448,7 +420,7 @@ export default function Page() {
           <div className="rm-card">
             <h4>Worflow Seguimiento Comercial</h4>
             <ul className="hito-list">
-              <li>Implemnetación</li>
+              <li>Implementación</li>
               <li>QA Usuario</li>
               <li>Paso a producción</li>
             </ul>
@@ -515,7 +487,7 @@ export default function Page() {
               <h3 style={{ margin: 0, fontSize: 15 }}>Wazuh-Ciberseguridad</h3>
             </div>
             <p style={{ margin: 0, fontSize: 13, lineHeight: 1.4, color: 'var(--muted)' }}>
-              Monitoreo de seguridad y alertas automaticas
+              Monitoreo de seguridad y alertas automáticas
             </p>
           </div>
 
@@ -528,7 +500,7 @@ export default function Page() {
               <h3 style={{ margin: 0, fontSize: 15 }}>Automatización de alertas Oficore-Teams</h3>
             </div>
             <p style={{ margin: 0, fontSize: 13, lineHeight: 1.4, color: 'var(--muted)' }}>
-              Notificaciones automaticas de ticket en riesgo o fuera de SLA.
+              Notificaciones automáticas de ticket en riesgo o fuera de SLA.
             </p>
           </div>
 
@@ -541,7 +513,7 @@ export default function Page() {
               <h3 style={{ margin: 0, fontSize: 15 }}>Proxmox</h3>
             </div>
             <p style={{ margin: 0, fontSize: 13, lineHeight: 1.4, color: 'var(--muted)' }}>
-              Implemnetación de plataforma de virtualización.
+              Implementación de plataforma de virtualización.
             </p>
           </div>
 
