@@ -11,8 +11,8 @@ export default function Page() {
             <a href="#resumen">Resumen</a>
             <a href="#servicios">Servicios</a>
             <a href="#propuestas">Prospectos &amp; Propuestas</a>
-            <a href="#ejecuciones-septiembre">Ejecuciones Septiembre</a>
-            <a href="#roadmap-octubre">Roadmap Octubre</a>
+            <a href="#ejecuciones-septiembre">Ejecuciones Octubre</a>
+            <a href="#roadmap-octubre">Roadmap Noviembre</a>
             <a href="#infra">Infraestructura</a>
           </nav>
         </div>
@@ -21,7 +21,7 @@ export default function Page() {
       <section className="hero" style={{ paddingBottom: 16 }}>
         <span className="eyebrow">Gerencia de Tecnología e Innovación</span>
         <h1 className="gradient-text">Comité de Gerentes</h1>
-        <p className="sub">Reporte de cierre — Septiembre 2026</p>
+        <p className="sub">Reporte de cierre — Octubre 2026</p>
       </section>
 
       <section className="block" id="resumen" style={{ paddingTop: 16, paddingBottom: 24 }}>
@@ -31,11 +31,11 @@ export default function Page() {
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 20 }}>
           <div className="stat-card">
-            <div className="stat-num gradient-text">10</div>
+            <div className="stat-num gradient-text">09</div>
             <div className="stat-label">Clientes en Operación</div>
           </div>
           <div className="stat-card">
-            <div className="stat-num gradient-text">09</div>
+            <div className="stat-num gradient-text">10</div>
             <div className="stat-label">Proyectos Internos</div>
           </div>
           <div className="stat-card">
@@ -171,29 +171,88 @@ export default function Page() {
       </section>
 
       <section className="block" id="ejecuciones-septiembre">
-        <div className="section-head">
-          <span className="bar"></span>
-          <h2>Ejecuciones Septiembre  2026</h2>
+        <div className="section-head" style={{ alignItems: 'flex-start' }}>
+          <span className="bar" style={{ marginTop: 4 }}></span>
+          <div>
+            <h2>Ejecuciones Octubre 2026</h2>
+            <p style={{ margin: '4px 0 0', fontSize: '15px', color: 'var(--muted)', fontWeight: 500 }}>
+              Principales entregables del mes
+            </p>
+          </div>
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 16, marginBottom: 28 }}>
+          {[
+            { value: '10', label: 'Iniciativas Planificadas', color: '#5e9d72' },
+            { value: '9', label: 'Entregadas', color: '#322590' },
+            { value: '3', label: 'Casos con mejoras', color: '#c34253' },
+            { value: '1', label: 'No realizado', color: '#d9ac4a' },
+          ].map((item) => (
+            <div
+              key={item.label}
+              style={{
+                background: 'var(--white)',
+                border: '1px solid var(--line)',
+                borderRadius: '16px',
+                padding: '16px 20px',
+                position: 'relative',
+                overflow: 'hidden',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                minHeight: '110px',
+                boxShadow: '0 2px 6px rgba(0, 0, 0, 0.04)',
+              }}
+            >
+              <span
+                style={{
+                  position: 'absolute',
+                  left: 0,
+                  top: 0,
+                  bottom: 0,
+                  width: '6px',
+                  backgroundColor: item.color,
+                  borderTopLeftRadius: '16px',
+                  borderBottomLeftRadius: '16px',
+                }}
+              />
+              <div style={{ textAlign: 'center', marginTop: '4px' }}>
+                <span style={{ fontSize: '36px', fontWeight: 800, color: '#100e39', lineHeight: 1 }}>
+                  {item.value}
+                </span>
+              </div>
+              <div style={{ fontSize: '13px', color: 'var(--muted)', fontWeight: 500, paddingLeft: '4px' }}>
+                {item.label}
+              </div>
+            </div>
+          ))}
         </div>
         <div className="roadmap-grid">
           <div className="rm-card">
-            <h4>Sitio Dreamtec</h4>
+            <h4>Sitio Ofimundo</h4>
             <ul className="hito-list">
-              <li>Landing</li>
-              <li>Conexión Google Analytics</li>
-              <li>Mejoras velocidad del sitio </li>
+              <li>Cambio de contenido salas colaborativas</li>
+              <li>Mejoras en agente</li>
+              <li>QA </li>
+              <li>Paso a produccion </li>
             </ul>
             <div className="weeks">
               <span className="week ">S1</span>
               <span className="week on">S2</span>
               <span className="week on ">S3</span>
-              <span className="week">S4</span>
+              <span className="week on">S4</span>
             </div>
           </div>
           <div className="rm-card">
-            <h4>Sitio HIway</h4>
+            <h4>Sitio Dreamtec</h4>
             <ul className="hito-list">
-              <li>Desarrollo prototipo nuevo sitio</li>
+              <li>Desarrollo modulo cupones </li>
+              <li>Administración sección de marcas </li>
+              <li>Actualiza página de garantia y devoluciones</li>
+              <li>Actualiza página terminos y condiciones</li>
+              <li>Desarrollo interfaz sección de marcas</li>
+              <li>Paso a QA</li>
+
             </ul>
             <div className="weeks">
               <span className="week">S1</span>
@@ -203,106 +262,109 @@ export default function Page() {
             </div>
           </div>
           <div className="rm-card">
-            <h4>Sitio Ofimundo</h4>
+            <h4>Cambios de usuarios</h4>
             <ul className="hito-list">
-              <li>Cambio de contenido en salas colaborativas</li>
-              <li>Cambio en agente(Usa dos IA para mantener tokens, en entrenamiento)</li>
-              <li>Desarrollo versión opcional</li>
+              <li>Ajustes en codigo reporte Tecnicos</li>
+              <li>Cambio de usuario</li>
             </ul>
             <div className="weeks">
               <span className="week">S1</span>
               <span className="week on">S2</span>
               <span className="week on">S3</span>
               <span className="week">S4</span>
+            </div>
+          </div>
+          <div className="rm-card">
+            <h4>Facturas de cortesia</h4>
+            <ul className="hito-list">
+              <li>Implementación UAT usuarios</li>
+              <li>Segundo ciclo QA</li>
+              <li>Paso a producción</li>
+            </ul>
+            <div className="weeks">
+              <span className="week ">S1</span>
+              <span className="week ">S2</span>
+              <span className="week on ">S3</span>
+              <span className="week ">S4</span>
+            </div>
+          </div>
+
+          <div className="rm-card">
+            <h4>Reemplazo electroneek ECR(*)</h4>
+            <ul className="hito-list">
+              <li>Desarrollo funcionalidad</li>
+              <li>QA</li>
+              <li>Paso a producción</li>
+            </ul>
+            <div className="weeks">
+              <span className="week on ">S1</span>
+              <span className="week on">S2</span>
+              <span className="week">S3</span>
+              <span className="week">S4</span>
+            </div>
+          </div>
+
+          <div className="rm-card">
+            <h4> ECR Finiquitos</h4>
+            <ul className="hito-list">
+              <li>Integración Captura Estados DT</li>
+              <li>En ejecución manual y prueba cliente </li>
+            </ul>
+            <div className="weeks">
+              <span className="week">S1</span>
+              <span className="week">S2</span>
+              <span className="week on">S3</span>
+              <span className="week ">S4</span>
             </div>
           </div>
           <div className="rm-card">
             <h4>WhatsApp</h4>
             <ul className="hito-list">
-              <li>QA Usuarios</li>
+              <li>Paso a producción</li>
             </ul>
             <div className="weeks">
-              <span className="week ">S1</span>
+              <span className="week">S1</span>
+              <span className="week">S2</span>
+              <span className="week ">S3</span>
+              <span className="week on">S4</span>
+            </div>
+          </div>
+          <div className="rm-card">
+            <h4>Workflow Seguimiemto Comercial(*)</h4>
+            <ul className="hito-list">
+              <li>Desarrollo</li>
+              <li>QA</li>
+              <li>Paso a producción</li>
+            </ul>
+            <div className="weeks">
+              <span className="week">S1</span>
               <span className="week on">S2</span>
-              <span className="week on ">S3</span>
-              <span className="week on ">S4</span>
-            </div>
-          </div>
-
-          <div className="rm-card">
-            <h4>Integración NDD</h4>
-            <ul className="hito-list">
-              <li>Integración con API</li>
-              <li>Capturas de contadores</li>
-            </ul>
-            <div className="weeks">
-              <span className="week on">S1</span>
-              <span className="week">S2</span>
-              <span className="week">S3</span>
-              <span className="week on">S4</span>
-            </div>
-          </div>
-
-          <div className="rm-card">
-            <h4> Prediagnósticos técnicos</h4>
-            <ul className="hito-list">
-              <li>Visitas Técnicas(1° Visita - 2° Visita)</li>
-            </ul>
-            <div className="weeks">
-              <span className="week">S1</span>
-              <span className="week">S2</span>
-              <span className="week">S3</span>
-              <span className="week on">S4</span>
-            </div>
-          </div>
-          <div className="rm-card">
-            <h4>Reemplazo Electroneek</h4>
-            <ul className="hito-list">
-              <li>M. Antofagasta - OK </li>
-              <li> ECRGroup - En proceso</li>
-              <li> Conciliación bancaria - Pendiente</li>
-            </ul>
-            <div className="weeks">
-              <span className="week">S1</span>
-              <span className="week">S2</span>
-              <span className="week on">S3</span>
-              <span className="week on">S4</span>
-            </div>
-          </div>
-          <div className="rm-card">
-            <h4>Plan de Cuentas</h4>
-            <ul className="hito-list">
-              <li>Se agrega la razón de la clasificación de equipos(Críticos y estratégicos)</li>
-            </ul>
-            <div className="weeks">
-              <span className="week">S1</span>
-              <span className="week">S2</span>
               <span className="week on">S3</span>
               <span className="week">S4</span>
             </div>
           </div>
           <div className="rm-card">
-            <h4>Cambio Usuarios en Base de datos</h4>
+            <h4>Integración NDD(*)</h4>
             <ul className="hito-list">
-              <li>Total 17 funcionalidades</li>
-              <li>11 - OK </li>
+              <li>QA de integración de contadores</li>
+              <li>En proceso inyección de alertas</li>
             </ul>
             <div className="weeks">
-              <span className="week">S1</span>
-              <span className="week on">S2</span>
-              <span className="week on">S3</span>
-              <span className="week on">S4</span>
+              <span className="week on">S1</span>
+              <span className="week ">S2</span>
+              <span className="week ">S3</span>
+              <span className="week ">S4</span>
             </div>
           </div>
           <div className="rm-card">
-            <h4>Fase 2 Finiquitos ECRGroup</h4>
+            <h4>Gestión de Ticket Zonas Extremas</h4>
             <ul className="hito-list">
-              <li>Habilitación inyección en la DT</li>
+              <li>Pendiente información </li>
             </ul>
             <div className="weeks">
               <span className="week">S1</span>
               <span className="week">S2</span>
-              <span className="week on">S3</span>
+              <span className="week">S3</span>
               <span className="week">S4</span>
             </div>
           </div>
@@ -310,21 +372,79 @@ export default function Page() {
       </section>
 
       <section className="block" id="roadmap-octubre">
-        <div className="section-head">
-          <span className="bar"></span>
-          <h2>Roadmap Octubre 2026</h2>
+        <div className="section-head" style={{ alignItems: 'flex-start' }}>
+          <span className="bar" style={{ marginTop: 4 }}></span>
+          <div>
+            <h2>Roadmap Noviembre 2026</h2>
+            <p style={{ margin: '4px 0 0', fontSize: '15px', color: 'var(--muted)', fontWeight: 500 }}>
+              Iniciativas propuestas
+            </p>
+          </div>
         </div>
         <div className="roadmap-grid">
           <div className="rm-card">
-            <h4>Sitio Dreamtec</h4>
+            <h4>Reemplazo electroneek ECR </h4>
             <ul className="hito-list">
-              <li>Integración Cubbo</li>
-              <li> Funcionalidad Cupones</li>
-              <li> Funcionalidad Mayoristas(TecnoGlobal)</li>
+              <li>Funcionalidad de gatillo del proceso sin Electroneek</li>
+            </ul>
+            <div className="weeks">
+              <span className="week">S1</span>
+              <span className="week ">S2</span>
+              <span className="week on">S3</span>
+              <span className="week ">S4</span>
+            </div>
+          </div>
+
+          <div className="rm-card">
+            <h4>Workflow Seguimiemto Comercial</h4>
+            <ul className="hito-list">
+              <li>Aplicar observaciones de la marcha blanca</li>
+              <li>QA</li>
+              <li>Paso a producción</li>
+            </ul>
+            <div className="weeks">
+              <span className="week ">S1</span>
+              <span className="week on">S2</span>
+              <span className="week on">S3</span>
+              <span className="week ">S4</span>
+            </div>
+          </div>
+
+          <div className="rm-card">
+            <h4>Integración NDD</h4>
+            <ul className="hito-list">
+              <li>Validación corrección del proveedor</li>
+            </ul>
+            <div className="weeks">
+              <span className="week">S1</span>
+              <span className="week">S2</span>
+              <span className="week ">S3</span>
+              <span className="week on">S4</span>
+            </div>
+          </div>
+          <div className="rm-card">
+            <h4>Gestión de ticket zonas extremas </h4>
+            <ul className="hito-list">
+              <li>Implementación </li>
               <li>Paso a producción</li>
             </ul>
             <div className="weeks">
               <span className="week">S1</span>
+              <span className="week ">S2</span>
+              <span className="week on">S3</span>
+              <span className="week">S4</span>
+            </div>
+          </div>
+
+          <div className="rm-card">
+            <h4>Centinella</h4>
+            <ul className="hito-list">
+              <li>Implementación infraestructura</li>
+              <li>Diseño </li>
+              <li>Desarrollo matriz de cumplimiento </li>
+            </ul>
+            <div className="weeks">
+              <span className="week on">S1</span>
               <span className="week on">S2</span>
               <span className="week on">S3</span>
               <span className="week on">S4</span>
@@ -332,111 +452,57 @@ export default function Page() {
           </div>
 
           <div className="rm-card">
-            <h4>Sitio Ofimundo</h4>
+            <h4>Sitio Hiway</h4>
             <ul className="hito-list">
-              <li>QA Usuario</li>
+              <li>Implementación</li>
+              <li>QA</li>
+              <li>Evalución de traslado de dominio</li>
+              <li>Paso a producción</li>
+            </ul>
+            <div className="weeks">
+              <span className="week on">S1</span>
+              <span className="week on">S2</span>
+              <span className="week on">S3</span>
+              <span className="week ">S4</span>
+            </div>
+          </div>
+
+          <div className="rm-card">
+            <h4>Reemplazo Electroneek Ofimundo</h4>
+            <ul className="hito-list">
+              <li>Aplica cambios</li>
+              <li>QA</li>
               <li>Paso a producción</li>
             </ul>
             <div className="weeks">
               <span className="week ">S1</span>
               <span className="week ">S2</span>
-              <span className="week on">S3</span>
+              <span className="week ">S3</span>
               <span className="week on">S4</span>
             </div>
           </div>
 
           <div className="rm-card">
-            <h4>WhatsApp</h4>
-            <ul className="hito-list">
-              <li>Paso a producción</li>
-            </ul>
-            <div className="weeks">
-              <span className="week">S1</span>
-              <span className="week">S2</span>
-              <span className="week on">S3</span>
-              <span className="week">S4</span>
-            </div>
-          </div>
-          <div className="rm-card">
-            <h4>Cambio de Usuario</h4>
-            <ul className="hito-list">
-              <li>Reemplazo en los aplicativos:</li>
-              <li>• Envío GR y Reportes técnicos</li>
-              <li>• Reportes SGC Guías ALLIN</li>
-              <li>• Impresión Guías y Cartas de cobranza</li>
-              <li>• Envío de facturas no GR y sobreconsumo</li>
-            </ul>
-            <div className="weeks">
-              <span className="week">S1</span>
-              <span className="week on">S2</span>
-              <span className="week">S3</span>
-              <span className="week">S4</span>
-            </div>
-          </div>
-
-          <div className="rm-card">
-            <h4>Fase 2 Finiquitos ECRGroup</h4>
-            <ul className="hito-list">
-              <li> Paso a producción</li>
-              <li>Inyección DT</li>
-            </ul>
-            <div className="weeks">
-              <span className="week">S1</span>
-              <span className="week">S2</span>
-              <span className="week on">S3</span>
-              <span className="week on">S4</span>
-            </div>
-          </div>
-
-          <div className="rm-card">
-            <h4>Reemplazo Electroneek</h4>
-            <ul className="hito-list">
-              <li>ECRGroup - En proceso</li>
-              <li>Conciliación bancaria - Pendiente</li>
-            </ul>
-            <div className="weeks">
-              <span className="week">S1</span>
-              <span className="week">S2</span>
-              <span className="week on">S3</span>
-              <span className="week on">S4</span>
-            </div>
-          </div>
-
-          <div className="rm-card">
-            <h4>Facturas de Cortesía</h4>
-            <ul className="hito-list">
-              <li>Ajustes en desarrollo</li>
-              <li>QA Usuario</li>
-              <li>Paso a producción</li>
-            </ul>
-            <div className="weeks">
-              <span className="week ">S1</span>
-              <span className="week on">S2</span>
-              <span className="week on">S3</span>
-              <span className="week">S4</span>
-            </div>
-          </div>
-
-          <div className="rm-card">
-            <h4>Worflow Seguimiento Comercial</h4>
+            <h4>Revisión Productos clientes</h4>
             <ul className="hito-list">
               <li>Implementación</li>
               <li>QA Usuario</li>
               <li>Paso a producción</li>
             </ul>
             <div className="weeks">
-              <span className="week">S1</span>
-              <span className="week">S2</span>
+              <span className="week on">S1</span>
+              <span className="week on">S2</span>
               <span className="week on">S3</span>
-              <span className="week on">S4</span>
+              <span className="week ">S4</span>
             </div>
           </div>
 
           <div className="rm-card">
-            <h4>Gestión de ticket Zonas Extremas </h4>
+            <h4>Sitio Dreamtec</h4>
             <ul className="hito-list">
-              <li>Carga de datos clasificados </li>
-              <li>Desarrollo de registro y alerta de SLA(solicitud de pase, Asiganción de pase)</li>
+              <li>Desarrollo de priorizaciones</li>
+              <li>QA</li>
+              <li>Paso a producción</li>
             </ul>
             <div className="weeks">
               <span className="week">S1</span>
@@ -446,15 +512,16 @@ export default function Page() {
             </div>
           </div>
           <div className="rm-card">
-            <h4>Construcción Firmas Grupo Empresarial OM</h4>
+            <h4>Seguimiento despachos / N.req.</h4>
             <ul className="hito-list">
-              <li>Desarrollo firmas</li>
-              <li>Instalación Firmas </li>
+              <li>Desarrollo</li>
+              <li>QA</li>
+              <li>Paso a producción</li>
             </ul>
             <div className="weeks">
               <span className="week">S1</span>
-              <span className="week on">S2</span>
-              <span className="week on">S3</span>
+              <span className="week ">S2</span>
+              <span className="week ">S3</span>
               <span className="week on">S4</span>
             </div>
           </div>
@@ -474,7 +541,7 @@ export default function Page() {
 
         <h3 style={{ fontSize: '18px', fontWeight: 800, color: 'var(--navy)', marginTop: 12, marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
           <span style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--magenta)', display: 'inline-block' }}></span>
-          Septiembre 2026
+          Octubre 2026
         </h3>
 
         <div className="cards" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', marginBottom: 28 }}>
@@ -484,10 +551,10 @@ export default function Page() {
               <div style={{ width: 36, height: 36, borderRadius: 8, background: '#eff6ff', color: '#2563eb', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                 <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
               </div>
-              <h3 style={{ margin: 0, fontSize: 15 }}>Wazuh-Ciberseguridad</h3>
+              <h3 style={{ margin: 0, fontSize: 15 }}>Migración de plataforma Sitio web Ofimundo</h3>
             </div>
             <p style={{ margin: 0, fontSize: 13, lineHeight: 1.4, color: 'var(--muted)' }}>
-              Monitoreo de seguridad y alertas automáticas
+              Dado la el uso de Base de datos se agregan las configuraciones de seguridad
             </p>
           </div>
 
@@ -497,10 +564,10 @@ export default function Page() {
               <div style={{ width: 36, height: 36, borderRadius: 8, background: '#eff6ff', color: '#2563eb', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                 <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
               </div>
-              <h3 style={{ margin: 0, fontSize: 15 }}>Automatización de alertas Oficore-Teams</h3>
+              <h3 style={{ margin: 0, fontSize: 15 }}>VPN Lota-Lampa</h3>
             </div>
             <p style={{ margin: 0, fontSize: 13, lineHeight: 1.4, color: 'var(--muted)' }}>
-              Notificaciones automáticas de ticket en riesgo o fuera de SLA.
+              Implementación comunicación directa entre las redes corporativas
             </p>
           </div>
 
@@ -510,10 +577,11 @@ export default function Page() {
               <div style={{ width: 36, height: 36, borderRadius: 8, background: '#eff6ff', color: '#2563eb', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                 <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
               </div>
-              <h3 style={{ margin: 0, fontSize: 15 }}>Proxmox</h3>
+              <h3 style={{ margin: 0, fontSize: 15 }}>Evalución de traslado DataCenter</h3>
             </div>
             <p style={{ margin: 0, fontSize: 13, lineHeight: 1.4, color: 'var(--muted)' }}>
-              Implementación de plataforma de virtualización.
+              Plan de trabajo -
+              Identificacion de pruebas de replicación
             </p>
           </div>
 
@@ -523,10 +591,10 @@ export default function Page() {
               <div style={{ width: 36, height: 36, borderRadius: 8, background: '#eff6ff', color: '#2563eb', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                 <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
               </div>
-              <h3 style={{ margin: 0, fontSize: 15 }}>Migración servidor Unifi</h3>
+              <h3 style={{ margin: 0, fontSize: 15 }}>Proyecto Centinella</h3>
             </div>
             <p style={{ margin: 0, fontSize: 13, lineHeight: 1.4, color: 'var(--muted)' }}>
-              Migración a servidor Linux centralizando la administración de dispositivos de red
+              Definición de arquitectura y seguridad
             </p>
           </div>
         </div>
@@ -539,7 +607,7 @@ export default function Page() {
             alt="Logo de Ofimundo"
           />
           <h3 className="gradient-text">Muchas gracias</h3>
-          <p>Por su atención al reporte de cierre Septiembre 2026.</p>
+          <p>Por su atención al reporte de cierre Octubre 2026.</p>
           <small>Ofimundo · Tu transformación, nuestra pasión</small>
         </div>
       </footer>
