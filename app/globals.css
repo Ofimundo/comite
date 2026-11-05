@@ -320,6 +320,13 @@ tbody td {
 }
 tbody tr:nth-child(even) { background: var(--bg-soft); }
 tbody tr td:first-child { font-weight: 600; }
+tbody tr.tr-inactivo { background-color: #fff0f1 !important; }
+tbody tr.tr-inactivo td { color: #d32f2f !important; }
+tbody tr.tr-inactivo .badge {
+  background: #ffebee !important;
+  color: #c62828 !important;
+  border: 1px solid #ffcdd2 !important;
+}
 
 .badge {
   display: inline-block;
@@ -333,6 +340,7 @@ tbody tr td:first-child { font-weight: 600; }
 .b-piloto { background: #fff2e0; color: #b56a00; }
 .b-dev { background: #f0e7fb; color: var(--purple); }
 .b-standby { background: #fde7f1; color: var(--magenta); }
+.b-inactivo { background: #ffebee; color: #c62828; border: 1px solid #ffcdd2; }
 
 /* Card grid */
 .cards {

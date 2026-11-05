@@ -80,10 +80,10 @@ export default function Page() {
                 <td>Aceptación y Rechazo de Facturas</td>
                 <td><span className="badge b-activo">Activo</span></td>
               </tr>
-              <tr>
+              <tr className="tr-inactivo">
                 <td>M. Antofagasta</td>
                 <td>Aceptación y Rechazo de Facturas</td>
-                <td><span className="badge b-activo">Activo</span></td>
+                <td><span className="badge b-inactivo">Activo</span></td>
               </tr>
               <tr>
                 <td>ECRGroup</td>
@@ -111,10 +111,10 @@ export default function Page() {
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr className="tr-inactivo">
                 <td>Municipalidad de Antofagasta</td>
                 <td>Cuentas Básicas</td>
-                <td><span className="badge b-piloto">Postergado</span></td>
+                <td><span className="badge b-inactivo">Postergado</span></td>
                 <td>30 de Octubre</td>
               </tr>
               <tr>
@@ -157,7 +157,7 @@ export default function Page() {
                 <td>Hospital Militar</td>
                 <td>Administración y monitoreo Soporte Usuarios </td>
                 <td><span className="badge b-standby">Presentar Prototipo</span></td>
-                <td>19 de Octubre</td>
+                <td>Postergado por cliente</td>
               </tr>
               <tr>
                 <td>Hospital Militar</td>
@@ -265,7 +265,7 @@ export default function Page() {
             <h4>Cambios de usuarios</h4>
             <ul className="hito-list">
               <li>Ajustes en codigo reporte Tecnicos</li>
-              <li>Cambio de usuario</li>
+              <li>Paso a producción</li>
             </ul>
             <div className="weeks">
               <span className="week">S1</span>
@@ -334,7 +334,7 @@ export default function Page() {
             <ul className="hito-list">
               <li>Desarrollo</li>
               <li>QA</li>
-              <li>Paso a producción</li>
+              <li>Paso a Marcha blanca </li>
             </ul>
             <div className="weeks">
               <span className="week">S1</span>
@@ -454,16 +454,15 @@ export default function Page() {
           <div className="rm-card">
             <h4>Sitio Hiway</h4>
             <ul className="hito-list">
-              <li>Implementación</li>
-              <li>QA</li>
               <li>Evalución de traslado de dominio</li>
-              <li>Paso a producción</li>
+              <li>Implementación</li>
+
             </ul>
             <div className="weeks">
-              <span className="week on">S1</span>
-              <span className="week on">S2</span>
+              <span className="week ">S1</span>
+              <span className="week ">S2</span>
               <span className="week on">S3</span>
-              <span className="week ">S4</span>
+              <span className="week on ">S4</span>
             </div>
           </div>
 
@@ -472,7 +471,6 @@ export default function Page() {
             <ul className="hito-list">
               <li>Aplica cambios</li>
               <li>QA</li>
-              <li>Paso a producción</li>
             </ul>
             <div className="weeks">
               <span className="week ">S1</span>
@@ -488,7 +486,7 @@ export default function Page() {
               <li>Revisión código</li>
               <li>Implementación Dashboard</li>
               <li>QA Usuario</li>
-              <li>Paso a producción</li>
+              <li>Paso a producción de lo probado en QA</li>
             </ul>
             <div className="weeks">
               <span className="week on">S1</span>
@@ -501,9 +499,9 @@ export default function Page() {
           <div className="rm-card">
             <h4>Sitio Dreamtec</h4>
             <ul className="hito-list">
+              <li>Paso a producción de lo aprobado en QA</li>
               <li>Desarrollo de priorizaciones</li>
               <li>QA</li>
-              <li>Paso a producción</li>
             </ul>
             <div className="weeks">
               <span className="week">S1</span>
