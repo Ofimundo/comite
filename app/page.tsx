@@ -411,9 +411,9 @@ export default function Page() {
           </div>
 
           <div className="rm-card">
-            <h4>Integración NDD</h4>
+            <h4>Plan de cuentas </h4>
             <ul className="hito-list">
-              <li>Validación corrección del proveedor</li>
+              <li>Incorporación  Leads de negocios</li>
             </ul>
             <div className="weeks">
               <span className="week">S1</span>
@@ -483,9 +483,10 @@ export default function Page() {
           </div>
 
           <div className="rm-card">
-            <h4>Revisión Productos clientes</h4>
+            <h4>Revisión A/R - Dashboard cliente</h4>
             <ul className="hito-list">
-              <li>Implementación</li>
+              <li>Revisión código</li>
+              <li>Implementación Dashboard</li>
               <li>QA Usuario</li>
               <li>Paso a producción</li>
             </ul>
