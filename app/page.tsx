@@ -4,8 +4,8 @@ export default function Page() {
       <header>
         <div className="header-inner">
           <img
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo%20Ofimundo-Office%20365-min-yeadHRGLJyAkI4Z134CcoMyv5zXq6X.png"
-            alt="Logo de Ofimundo"
+            src="/Logo3.png"
+            alt="Logo"
           />
           <nav>
             <a href="#resumen">Resumen</a>
@@ -602,8 +602,8 @@ export default function Page() {
       <footer>
         <div className="footer-inner">
           <img
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo%20Ofimundo-Office%20365-min-yeadHRGLJyAkI4Z134CcoMyv5zXq6X.png"
-            alt="Logo de Ofimundo"
+            src="/Logo3.png"
+            alt="Logo"
           />
           <h3 className="gradient-text">Muchas gracias</h3>
           <p>Por su atención al reporte de cierre Octubre 2026.</p>
